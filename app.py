@@ -1,10 +1,14 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Flask backend is running!"})
+    return render_template('login.html')  
+
+@app.route('/register')
+def register_page():
+    return render_template('register.html')
 
 @app.route('/api/login', methods=['POST'])
 def login():
