@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGACI - experience quantum treasury</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <h1 class="site-title">LEGACI</h1>
+      <p class="tagline">EXPERIENCE QUANTUM TREASURY</p>
+    </div>
 
-</body>
+    <!-- Login Form -->
+    <div class="form-panel" id="login-panel">
+      <h2 class="form-title">WELCOME</h2>
+      <p class="form-subtitle">Enter your authorized email to sign in</p>
+
+      <input
+        type="email"
+        placeholder="your@company.com"
+        class="form-input"
+        id="email"
+      />
+      <p id="email-error" class="error-message"></p>
+
+      <div class="password-wrapper">
+        <button
+          type="button"
+          class="toggle-password"
+          onclick="togglePassword()"
+        >
+          👁
+        </button>
+        <input
+          type="password"
+          placeholder="password (8-16 characters)"
+          class="form-input password-input"
+          id="password"
+        />
+      </div>
+      <p id="password-error" class="error-message"></p>
+
+      <button class="continue-btn" onclick="validateLogin()">Log In</button>
+
+      <!-- Sign Up Button -->
+      <button
+        class="continue-btn"
+        onclick="window.location.href='registerpage.html'"
+      >
+        Sign Up
+      </button>
+
+      <p class="forgot-password" onclick="sendPasswordReset()">
+        Forgot password?
+      </p>
+    </div>
+  </body>
 </html>
