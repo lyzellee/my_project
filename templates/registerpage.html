@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>LEGACI - Sign Up</title>
 
-</body>
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+      <!-- Font Awesome for icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+      <!-- External CSS -->
+      <link rel="stylesheet" href="style2.css" />
+   </head>
+
+   <body>
+      <div class="content-wrapper">
+         <img src="logo.png" alt="Logo" class="logo" />
+         <h1 class="site-title">LEGACI</h1>
+         <p class="tagline">EXPERIENCE QUANTUM TREASURY</p>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div class="form-panel">
+         <h2 class="form-title">CREATE ACCOUNT</h2>
+         <p class="form-subtitle">Fill in your details to get started</p>
+
+         <label for="name" class="form-label">Name</label>
+         <div class="input-icon">
+            <i class="fa fa-user"></i>
+            <input type="text" id="name" placeholder="Full name" class="form-input" required />
+         </div>
+
+         <label for="email" class="form-label">Email</label>
+         <div class="input-icon">
+            <i class="fa fa-envelope"></i>
+            <input type="email" id="email" placeholder="your@company.com" class="form-input" required />
+         </div>
+
+         <label for="password" class="form-label">Password</label>
+         <div class="input-icon password-wrapper">
+            <i class="fa fa-lock"></i>
+            <input type="password" id="password" placeholder="8-16 characters" class="form-input password-input" required />
+            <button type="button" class="toggle-password" onclick="togglePassword('password')"></button>
+         </div>
+
+         <label for="confirm-password" class="form-label">Confirm Password</label>
+         <div class="input-icon password-wrapper">
+            <i class="fa fa-lock"></i>
+            <input type="password" id="confirm-password" placeholder="Re-enter password" class="form-input password-input" required />
+            <button type="button" class="toggle-password" onclick="togglePassword('confirm-password')"></button>
+         </div>
+
+         <button class="continue-btn">Sign Up</button>
+
+         <!-- Already have an account -->
+         <p class="login-text">Already have an account?</p>
+
+         <!-- Log In Button -->
+         <button class="continue-btn" onclick="window.location.href='login.html'">Log In</button>
+      </div>
+
+      <script src="script.js"></script>
+   </body>
 </html>
