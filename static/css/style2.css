@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 230px;
+  background-image: url("BACKGROUND PC.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+}
+
+/* Logo and Title Section */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  transform: translateY(-40px);
+  position: absolute;
+  left: 230px;
+}
+
+.logo {
+  max-width: 350px;
+  height: auto;
+}
+
+.site-title {
+  font-size: 6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.65rem;
+  color: white;
+  margin: 0;
+  text-shadow: 0 0 5px #000;
+}
+
+.tagline {
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+  font-weight: lighter;
+  color: white;
+  margin-top: 0;
+  text-shadow: 0 0 3px #000;
+}
+
+/* Sign-Up Form Panel */
+.form-panel {
+  background-color: rgba(27, 27, 27, 0.7);
+  margin-left: 700px;
+  padding: 60px 80px;
+  border-radius: 30px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+}
+
+.form-subtitle {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+/* Input Fields */
+.form-label {
+  align-self: flex-start;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.input-icon {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #cfcfcf;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.fa.fa-eye {
+  right: 20px;
+}
+
+.form-input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 15px 20px 15px 45px; /* space for icon */
+  border: none;
+  border-radius: 10px;
+  background: white;
+  box-sizing: border-box;
+  color: #1a1a1a;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.password-input {
+  padding-right: 50px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #666;
+  z-index: 2;
+}
+
+.toggle-password:hover {
+  color: #adcfeb;
+}
+
+/* Buttons */
+.continue-btn {
+  width: 100%;
+  font-size: 1rem;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #f8f8f8;
+  color: rgb(26, 26, 26);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  letter-spacing: 0.1rem;
+}
+
+.continue-btn:hover {
+  background-color: #adcfeb;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Login text below Sign Up */
+.login-text {
+  margin-top: 25px;
+  font-size: 0.95rem;
+  color: #fff;
+  opacity: 0.9;
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
