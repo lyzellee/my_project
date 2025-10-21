@@ -8,7 +8,7 @@ def home():
 
 @app.route('/register')
 def register_page():
-    return render_template('register.html')
+    return render_template('registerpage.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

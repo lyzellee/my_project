@@ -5,7 +5,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding-left: 230px;
-  background-image: url("BACKGROUND PC.png");
+  background-image: url("/static/BACKGROUND\ PC.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@ body {
 
 .toggle-password {
   position: absolute;
-  right: 15px;
+  right:15px;
   top: 50%;
   transform: translateY(-50%);
   background: none;
@@ -175,4 +175,16 @@ body {
   opacity: 0.9;
   text-align: center;
   letter-spacing: 0.03rem;
+}
+
+a {
+  width: 100%;
+  text-decoration: none;
+  display: block;
+}
+
+a .continue-btn {
+  width: 100%;
+  padding: 15px; /* same as Log In button */
+  box-sizing: border-box;
 }
