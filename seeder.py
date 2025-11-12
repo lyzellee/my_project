@@ -3,12 +3,15 @@ from models.db import db
 from models.user_model import User 
 from werkzeug.security import generate_password_hash
 from sqlalchemy.exc import SQLAlchemyError, IntegrityError
+from datetime import datetime, date
 
 def seed_data():
     with app.app_context():
         try:
             print("Starting database seeding")
             
+            def parse_birthday(date_string):
+                return datetime.strptime(date_string, '%B %d, %Y').date()
 
             seed_users = [
                 User(
@@ -18,7 +21,7 @@ def seed_data():
                     last_name="Reambonanza",
                     email="belle@example.com",
                     password=generate_password_hash("beller123"),
-                    birthday="August 22, 2005",
+                    birthday=parse_birthday("August 22, 2005"),
                     gender="Female",
                     phone_number="09674566985",
                     address="Cavite City",
@@ -31,7 +34,7 @@ def seed_data():
                     last_name="Minaj",
                     email="eli@example.com",
                     password=generate_password_hash("eli123"),
-                    birthday="April 28, 2005",
+                    birthday=parse_birthday("August 28, 2004"),
                     gender="Female",
                     phone_number="09674566986",
                     address="Quezon City",
