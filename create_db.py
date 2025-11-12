@@ -13,7 +13,7 @@ def create_database_if_not_exist():
         user = url.username or ""
         password = url.password or ""
         host = url.host or ""
-        port = url.port or 3306
+        port = url.port or 5055
         database = url.database
 
         if not database:
