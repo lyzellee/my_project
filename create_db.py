@@ -6,7 +6,7 @@ from config import Config
 
 def create_database_if_not_exist():
     try:
-        url =make_url(Config.SQLALCHEMY_DATABASE_URI)
+        url =make_url(Config.SQLALCHEMY_DATABASE_URI) 
         if url.get_backend_name() != 'mysql':
             print("Only mysql is supported by this script")
             return False
