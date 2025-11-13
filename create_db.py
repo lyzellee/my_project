@@ -8,7 +8,7 @@ def create_database_if_not_exist():
     try:
         url =make_url(Config.SQLALCHEMY_DATABASE_URI) 
         if url.get_backend_name() != 'mysql':
-            print("Only mysql is supported by this script")
+            print("Only mysql is supported by this script") 
             return False
         user = url.username or ""
         password = url.password or ""
